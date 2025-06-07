@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>简单网页示例</title>
+     <style>
+         body {
+             font-family: 'Arial', sans-serif;
+             margin: 0;
+             padding: 20px;
+             background-color: #f0f0f0;
+         }
+         .container {
+             max-width: 800px;
+             margin: 0 auto;
+             background-color: white;
+             padding: 20px;
+             border-radius: 8px;
+             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+         }
+         .header {
+             text-align: center;
+             padding: 20px;
+             background-color: #4CAF50;
+             color: white;
+             border-radius: 4px;
+         }
+         .button {
+             background-color: #4CAF50;
+             border: none;
+             color: white;
+             padding: 10px 20px;
+             text-align: center;
+             text-decoration: none;
+             display: inline-block;
+             font-size: 16px;
+             margin: 10px;
+             cursor: pointer;
+             border-radius: 4px;
+         }
+         #message {
+             margin-top: 20px;
+             font-weight: bold;
+             color: #666;
+         }
+     </style>
+ </head>
+ <body>
+     <div class="container">
+         <div class="header">
+             <h1>欢迎来到我的网页</h1>
+             <p>这是一个简单的前端示例</p>
+         </div>
+         <p>点击按钮查看效果：</p>
+         <button class="button" onclick="showMessage()">显示消息</button>
+         <button class="button" onclick="hideMessage()">隐藏消息</button>
+         <div id="message">这是一条可交互的消息</div>
+         <script>
+             function showMessage() {
+                 document.getElementById('message').style.display = 'block';
+             }
+             function hideMessage() {
+                 document.getElementById('message').style.display = 'none';
+             }
+        </script>
+    </div>
+</body>
+</html>
+
